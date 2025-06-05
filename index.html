@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBカラーミキサー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RGBカラーミキサー</h1>
+        
+        <div class="color-display" id="colorDisplay"></div>
+        
+        <div class="controls">
+            <div class="slider-group">
+                <label for="redSlider">R（赤）</label>
+                <div class="slider-container">
+                    <input type="range" id="redSlider" min="0" max="255" value="0" class="slider red-slider">
+                    <span class="value-display" id="redValue">0</span>
+                </div>
+            </div>
+            
+            <div class="slider-group">
+                <label for="greenSlider">G（緑）</label>
+                <div class="slider-container">
+                    <input type="range" id="greenSlider" min="0" max="255" value="0" class="slider green-slider">
+                    <span class="value-display" id="greenValue">0</span>
+                </div>
+            </div>
+            
+            <div class="slider-group">
+                <label for="blueSlider">B（青）</label>
+                <div class="slider-container">
+                    <input type="range" id="blueSlider" min="0" max="255" value="0" class="slider blue-slider">
+                    <span class="value-display" id="blueValue">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="presets">
+            <h3>試してみよう！</h3>
+            <div class="preset-buttons">
+                <button class="preset-btn" data-r="255" data-g="0" data-b="0">赤</button>
+                <button class="preset-btn" data-r="0" data-g="255" data-b="0">緑</button>
+                <button class="preset-btn" data-r="0" data-g="0" data-b="255">青</button>
+                <button class="preset-btn" data-r="255" data-g="255" data-b="0">黄色</button>
+                <button class="preset-btn" data-r="255" data-g="0" data-b="255">紫</button>
+                <button class="preset-btn" data-r="0" data-g="255" data-b="255">水色</button>
+                <button class="preset-btn" data-r="255" data-g="255" data-b="255">白</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
