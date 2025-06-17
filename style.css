@@ -118,45 +118,6 @@ h1 {
     border: 2px solid #bdc3c7;
 }
 
-.presets {
-    text-align: center;
-}
-
-.presets h3 {
-    color: #2c3e50;
-    margin-bottom: 15px;
-    font-size: 1.3rem;
-}
-
-.preset-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 12px;
-}
-
-.preset-btn {
-    padding: 15px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: 3px solid #34495e;
-    border-radius: 10px;
-    background: white;
-    color: #2c3e50;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    min-height: 60px;
-}
-
-.preset-btn:hover {
-    background: #ecf0f1;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.preset-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 @media (max-width: 600px) {
     .container {
@@ -186,12 +147,4 @@ h1 {
         height: 55px;
     }
     
-    .preset-buttons {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .preset-btn {
-        padding: 18px;
-        min-height: 65px;
-    }
 }

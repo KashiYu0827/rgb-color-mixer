@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const blueValue = document.getElementById('blueValue');
     
     const colorDisplay = document.getElementById('colorDisplay');
-    const presetButtons = document.querySelectorAll('.preset-btn');
     
     function updateColor() {
         const r = parseInt(redSlider.value);
@@ -23,25 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
         colorDisplay.style.backgroundColor = rgbColor;
     }
     
-    function setColor(r, g, b) {
-        redSlider.value = r;
-        greenSlider.value = g;
-        blueSlider.value = b;
-        updateColor();
-    }
     
     redSlider.addEventListener('input', updateColor);
     greenSlider.addEventListener('input', updateColor);
     blueSlider.addEventListener('input', updateColor);
-    
-    presetButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const r = parseInt(this.dataset.r);
-            const g = parseInt(this.dataset.g);
-            const b = parseInt(this.dataset.b);
-            setColor(r, g, b);
-        });
-    });
     
     updateColor();
 });
